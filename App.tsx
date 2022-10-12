@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, TouchableOpacity, TextInput } from 'react-native';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 export const INPUT_TEXT_VALID = 'valid';
 export const INPUT_TEXT_INVALID = 'invalid';
@@ -26,7 +26,7 @@ export default function App() {
       />
 
       <TouchableOpacity onPress={handleOnPress} disabled={isLoading} testID="button">
-        Click me
+        <Text>Click me</Text>
       </TouchableOpacity>
     </View>
   );
